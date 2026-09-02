@@ -1,0 +1,8 @@
+# Keyboard layout and options
+input type:keyboard {
+    xkb_layout us,ru
+    xkb_options "grp:alt_shift_toggle"
+}
+
+# Allows moving floating windows by holding Mod + clicking
+floating_modifier $mod normal

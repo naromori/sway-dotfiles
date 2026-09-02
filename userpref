@@ -1,0 +1,1 @@
+for_window [class="^AmneziaVPN$"] floating enable, resize set 360 px 640 px

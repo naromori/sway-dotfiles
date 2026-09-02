@@ -1,0 +1,19 @@
+# Modifier key
+set $mod Mod4
+
+# Vim-like navigation keys
+set $left h
+set $down j
+set $up k
+set $right l
+
+# Default applications
+set $term alacritty
+set $menu rofi -show drun
+set $editor zeditor
+set $file_manager thunar
+set $browser helium-browser
+
+# Monitor names
+set $left_monitor  HDMI-A-2
+set $right_monitor DP-2

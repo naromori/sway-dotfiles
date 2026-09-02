@@ -1,0 +1,69 @@
+bindsym --to-code $mod+t exec $term
+bindsym --to-code $mod+a exec $menu
+bindsym --to-code $mod+c exec $editor
+bindsym --to-code $mod+e exec $file_manager
+bindsym --to-code $mod+b exec $browser
+bindsym --to-code $mod+n exec /usr/local/bin/nightlight-shot.sh
+
+bindsym --to-code $mod+q kill
+bindsym --to-code $mod+f floating toggle
+bindsym --to-code Shift+F10 fullscreen toggle
+
+bindsym --to-code $mod+Shift+c reload
+bindsym --to-code $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+
+bindsym --to-code $mod+$left focus left
+bindsym --to-code $mod+$down focus down
+bindsym --to-code $mod+$up focus up
+bindsym --to-code $mod+$right focus right
+bindsym --to-code $mod+Left focus left
+bindsym --to-code $mod+Down focus down
+bindsym --to-code $mod+Up focus up
+bindsym --to-code $mod+Right focus right
+
+bindsym --to-code $mod+Shift+$left move left
+bindsym --to-code $mod+Shift+$down move down
+bindsym --to-code $mod+Shift+$up move up
+bindsym --to-code $mod+Shift+$right move right
+bindsym --to-code $mod+Shift+Left move left
+bindsym --to-code $mod+Shift+Down move down
+bindsym --to-code $mod+Shift+Up move up
+bindsym --to-code $mod+Shift+Right move right
+
+bindsym --to-code $mod+1 workspace number 1
+bindsym --to-code $mod+2 workspace number 2
+bindsym --to-code $mod+3 workspace number 3
+bindsym --to-code $mod+4 workspace number 4
+bindsym --to-code $mod+5 workspace number 5
+bindsym --to-code $mod+6 workspace number 6
+bindsym --to-code $mod+7 workspace number 7
+bindsym --to-code $mod+8 workspace number 8
+bindsym --to-code $mod+9 workspace number 9
+bindsym --to-code $mod+0 workspace number 10
+
+bindsym --to-code $mod+Shift+1 move container to workspace number 1; workspace number 1
+bindsym --to-code $mod+Shift+2 move container to workspace number 2; workspace number 2
+bindsym --to-code $mod+Shift+3 move container to workspace number 3; workspace number 3
+bindsym --to-code $mod+Shift+4 move container to workspace number 4; workspace number 4
+bindsym --to-code $mod+Shift+5 move container to workspace number 5; workspace number 5
+bindsym --to-code $mod+Shift+6 move container to workspace number 6; workspace number 6
+bindsym --to-code $mod+Shift+7 move container to workspace number 7; workspace number 7
+bindsym --to-code $mod+Shift+8 move container to workspace number 8; workspace number 8
+bindsym --to-code $mod+Shift+9 move container to workspace number 9; workspace number 9
+bindsym --to-code $mod+Shift+0 move container to workspace number 10; workspace number 10
+
+# bindsym --to-code $mod+b splith
+# bindsym --to-code $mod+v splitv
+
+bindsym --to-code --locked XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym --to-code --locked XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym --to-code --locked XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym --to-code --locked XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
+bindsym --to-code --locked XF86AudioPlay exec playerctl play-pause
+bindsym --to-code --locked XF86AudioPause exec playerctl play-pause
+bindsym --to-code --locked XF86AudioPrev exec playerctl previous
+bindsym --to-code --locked XF86AudioNext exec playerctl next
+bindsym --to-code --locked XF86AudioStop exec playerctl stop
+
+bindsym --to-code $mod+Shift+s exec grim -g "$(slurp)" - | wl-copy

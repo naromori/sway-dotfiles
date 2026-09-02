@@ -1,0 +1,19 @@
+# Wallpaper and monitor configuration
+output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output DP-2 mode 1920x1080@240Hz pos 1920 0
+# output DP-2 mode 1920x1080@240Hz pos 1920 0 adaptive_sync on
+output HDMI-A-2 mode 1920x1080@60Hz pos 0 160
+
+# Bind Odd Workspaces to the Right Monitor
+workspace 1 output $right_monitor
+workspace 3 output $right_monitor
+workspace 5 output $right_monitor
+workspace 7 output $right_monitor
+workspace 9 output $right_monitor
+
+# Bind Even Workspaces to the Left Monitor
+workspace 2 output $left_monitor
+workspace 4 output $left_monitor
+workspace 6 output $left_monitor
+workspace 8 output $left_monitor
+workspace 10 output $left_monitor

@@ -1,0 +1,10 @@
+include ~/.config/sway/variables
+include ~/.config/sway/outputs
+include ~/.config/sway/inputs
+include ~/.config/sway/autostart
+include ~/.config/sway/styles
+include ~/.config/sway/bindings
+include ~/.config/sway/userpref
+
+# Include system-wide config drops
+include /etc/sway/config.d/*

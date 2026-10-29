@@ -5,3 +5,4 @@ exec swayidle -w \
 
 # Automatic tiling script
 exec autotiling-rs
+exec keepassxc --minimized

@@ -13,7 +13,8 @@ bindsym --to-code $mod+a exec $menu
 bindsym --to-code $mod+c exec $editor
 bindsym --to-code $mod+e exec $file_manager
 bindsym --to-code $mod+b exec $browser
-bindsym --to-code $mod+n exec /usr/local/bin/nightlight-shot.sh  # that is like very specific, but I will put it in config anyway
+# that is like very specific, but I will put it in config anyway
+bindsym --to-code $mod+n exec /usr/local/bin/nightlight-shot.sh
 bindsym --to-code $mod+Shift+s exec grim -g "$(slurp)" - | wl-copy
 
 bindsym --to-code $mod+q kill

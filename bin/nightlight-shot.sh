@@ -14,9 +14,11 @@ TS=$(date +"$FMT")
 FILE="${SCREENSHOT_DIR}/${TS}.png"
 
 if command -v grimblast &>/dev/null; then
-    grimblast save active "$FILE"         # Активное окно
+    # Активное окно
+    grimblast save active "$FILE"
 elif command -v grim &>/dev/null; then
-    grim "$FILE"                          # Полный экран (Fullscreen)
+    # Полный экран (Fullscreen)
+    grim "$FILE"
 else
     notify-send "❌ Screenshot" "grimblast/grim not found"
     exit 1

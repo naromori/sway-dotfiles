@@ -10,7 +10,7 @@ set $right l
 # Default applications
 set $term alacritty
 set $menu rofi -show drun
-set $editor zeditor
+set $editor vscodium
 set $file_manager thunar
 set $browser helium-browser
 

@@ -1,8 +1,6 @@
-# Wallpaper and monitor configuration
+# General screen settings (wallpaper and workspace-to-monitor mapping)
+# Hardware-specific monitor declarations live in userprefs
 output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-output DP-2 mode 1920x1080@240Hz pos 1920 0
-# output DP-2 mode 1920x1080@240Hz pos 1920 0 adaptive_sync on
-output HDMI-A-2 mode 1920x1080@60Hz pos 0 160
 
 # Bind Odd Workspaces to the Right Monitor
 workspace 1 output $right_monitor

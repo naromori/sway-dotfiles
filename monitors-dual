@@ -1,0 +1,10 @@
+# Dual monitor layout
+set $left_monitor  HDMI-A-2
+set $right_monitor DP-2
+
+# Left monitor
+output $left_monitor mode 1920x1080@60Hz pos 0 160
+
+# Right monitor
+output $right_monitor mode 1920x1080@240Hz pos 1920 0
+# output $right_monitor mode 1920x1080@240Hz pos 1920 0 adaptive_sync on

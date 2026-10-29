@@ -1,8 +1,8 @@
-include ~/.config/sway/userprefs  # [preference] declare user definitions first
-include ~/.config/sway/outputs    # eww
-include ~/.config/sway/inputs     # [preference] input config and keyboard layouts
-include ~/.config/sway/autostart  # [preference] autostart applications
-include ~/.config/sway/styles     # style settings (really cool-looking, plz don't change them :D)
-include ~/.config/sway/bindings   # my sacred keybinds - best of the best, if you ask me. Perfect workflow for my PC.
-include ~/.config/sway/windowrules # to make tiling great again, because why do I need prompts to take up half a screen.
-include /etc/sway/config.d/*  # blanket to cry under
+include ~/.config/sway/userprefs   # [preference] declare user definitions first
+include ~/.config/sway/inputs      # [preference] input config and keyboard layouts
+include ~/.config/sway/autostart   # [preference] autostart applications
+include ~/.config/sway/outputs     # monitor settings
+include ~/.config/sway/styles      # style settings (really cool-looking, plz don't change them :D)
+include ~/.config/sway/bindings    # my sacred keybinds - best of the best, if you ask me. Perfect workflow for my PC
+include ~/.config/sway/windowrules # to make tiling great again, because why do I need prompts to take up half a screen
+include /etc/sway/config.d/*       # blanket to cry under

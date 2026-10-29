@@ -7,6 +7,7 @@ set $editor vscodium
 set $file_manager thunar
 set $browser helium-browser
 
-## Monitor names
-set $left_monitor  HDMI-A-2
-set $right_monitor DP-2
+## Monitors
+# Uncomment exactly one layout below (dual = two monitors, single = one monitor)
+include ~/.config/sway/monitors-dual
+# include ~/.config/sway/monitors-single

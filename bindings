@@ -55,7 +55,7 @@ bindsym --to-code $mod+8 workspace number 8
 bindsym --to-code $mod+9 workspace number 9
 bindsym --to-code $mod+0 workspace number 10
 
-Move windows around even harder
+# Move windows around even harder
 bindsym --to-code $mod+Shift+1 move container to workspace number 1; workspace number 1
 bindsym --to-code $mod+Shift+2 move container to workspace number 2; workspace number 2
 bindsym --to-code $mod+Shift+3 move container to workspace number 3; workspace number 3

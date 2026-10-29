@@ -1,0 +1,5 @@
+# Single monitor layout
+set $left_monitor  DP-1
+set $right_monitor DP-1
+
+output $right_monitor mode 1920x1080@60Hz pos 0 0

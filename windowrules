@@ -1,4 +1,7 @@
+# Make AmneziaVPN floating as it should be
 for_window [app_id="^AmneziaVPN$"] floating enable, resize set 360 px 640 px
+
+# Make Godot prompts clear and readable
 for_window [title="Create New Node" class="Godot"] floating enable, resize set 720 px 420 px
 for_window [title="Create Folder" class="Godot"] floating enable, resize set 720 px 420 px
 for_window [title="Please Confirm..." class="Godot"] floating enable, resize set 720 px 420 px

@@ -1,12 +1,3 @@
-# Modifier key
-set $mod Mod4
-
-# Vim-like navigation keys
-set $left h
-set $down j
-set $up k
-set $right l
-
 # Default applications
 set $term alacritty
 set $menu rofi -show drun

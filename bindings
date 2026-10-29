@@ -1,3 +1,12 @@
+# Modifier key
+set $mod Mod4
+
+# Vim-like navigation keys
+set $left h
+set $down j
+set $up k
+set $right l
+
 bindsym --to-code $mod+t exec $term
 bindsym --to-code $mod+a exec $menu
 bindsym --to-code $mod+c exec $editor
